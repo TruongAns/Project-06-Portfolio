@@ -97,3 +97,16 @@
         text-align: start;
     }
 }
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+.custom-gutter {
+    --bs-gutter-x: 3rem;
+    /* Điều chỉnh khoảng cách ngang */
+    --bs-gutter-y: 1rem;
+    /* Điều chỉnh khoảng cách dọc */
+}
