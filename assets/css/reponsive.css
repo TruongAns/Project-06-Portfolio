@@ -110,3 +110,7 @@
     --bs-gutter-y: 3rem;
     /* Điều chỉnh khoảng cách dọc */
 }
+
+.about__header {
+    text-align: center;
+}

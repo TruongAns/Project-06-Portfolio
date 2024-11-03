@@ -481,3 +481,112 @@ header .decor {
     background: #ccc;
     border-color: #ccc;
 }
+
+/* =============================================== about =============================================== */
+
+.about {
+    padding-top: 140px;
+    background: var(--background-color-one);
+}
+
+.about__header .hello {
+    color: #5D3BEE;
+    font-size: 3.2rem;
+
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -1.28px;
+}
+
+.about__header .title {
+    margin-top: 10px;
+    color: var(--primary-color-text);
+    font-size: 5.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.17;
+    /* 117.857% */
+    letter-spacing: -2.24px;
+}
+
+.about__header .desc {
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 570px;
+    color: var(--second-color-text);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.66;
+    /* 166.667% */
+}
+
+.about__data {
+    margin-top: 90px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.about__data ::before {}
+
+.about__data .number {
+
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 1.35;
+    /* 135.714% */
+    letter-spacing: 1.68px;
+    text-decoration-line: underline;
+}
+
+.about__data .title {
+    color: var(--second-color-text);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.66;
+    /* 166.667% */
+}
+
+.about__media {
+    margin-top: 70px;
+    width: 100%;
+    position: relative;
+}
+
+.about__media video {
+    width: 100%;
+    object-fit: cover;
+}
+
+.about__media .action {
+
+    width: 111px;
+    height: 111px;
+    background: #ccccccc4;
+    /* background: orange; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: #5D3BEE;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.about__media .intro {
+    padding: 16px 28px;
+    background: #fff;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
