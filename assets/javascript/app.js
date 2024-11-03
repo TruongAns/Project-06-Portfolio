@@ -14,4 +14,21 @@ $(document).ready(function () {
         prevNextButtons: false,
         pauseAutoPlayOnHover: false,
     });
+
+    $(".faq__item .answer").slideUp();
+
+    showFirstFaq();
+    $(".faq__item .question").click(function (e) {
+        $(this).next().slideToggle();
+        $(this).children(".icon").toggleClass("fa-plus");
+        // $(this).children(".icon").toggleClass("fa-minus");
+        $(this).toggleClass("active");
+        // this.next().slideToggle();
+    });
+
+    function showFirstFaq() {
+        $(".faq__item .answer").first().slideDown();
+        $(".faq__item .question").first().children(".icon").toggleClass("fa-plus");
+        $(".faq__item .question").first().toggleClass("active");
+    }
 });
