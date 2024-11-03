@@ -1,0 +1,241 @@
+/* common */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.button {
+    min-width: 170px;
+    min-height: 62px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    color: #FDFDFD;
+    font-family: var(--primary-font);
+    background: #5E3DF2;
+    border: 1px solid #5E3DF2;
+    line-height: none;
+    transition: 0.4s;
+}
+
+.button:hover {
+    background: #1b0385;
+}
+
+:root {
+    --primary-color-text: #080415;
+    --second-color-text: #51586A;
+
+    /* font */
+    --primary-font: "DM Sans";
+    /* tránition    */
+    --timer-transition: 0.4s;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =============================================== header =============================================== */
+header {
+    background: #FBFAFF;
+    /* background: orange; */
+    overflow: hidden;
+    height: calc(100vh - 120px);
+    max-height: calc(100vh - 120px);
+    position: relative;
+}
+
+.header__content {
+    overflow: hidden;
+    /* margin-top: 40px; */
+    position: absolute;
+    bottom: 0;
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav {
+    position: sticky;
+    top: -20px;
+    z-index: 1000;
+
+    padding-top: 20px;
+    display: block;
+    width: 100%;
+    background: #FBFAFF;
+}
+
+
+.nav__contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary-color-text);
+    text-decoration: underline;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.36;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 43px;
+    color: var(--second-color-text);
+    font-family: "DM Sans";
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.nav__item:hover {
+    text-shadow: 0.3px 0.3px var(--primary-color-text);
+}
+
+.nav__mobile {
+    display: none;
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+.header__left {
+    padding-left: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.header__left img {
+    position: relative;
+    z-index: 1;
+}
+
+.header__left .decor {
+    position: absolute;
+    z-index: 0;
+    left: -40px;
+    bottom: -15px;
+}
+
+.header__left .img-wrap {
+    width: 514px;
+    height: 705px;
+    /* background: orange; */
+
+}
+
+.img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.header__right {
+    /* background: orange; */
+    padding-top: 137px;
+    padding-left: 80px;
+}
+
+header .decor {
+    position: absolute;
+    z-index: 1;
+    bottom: -152px;
+    right: 42px;
+}
+
+.header__title {
+    color: var(--primary-color-text);
+    font-family: "DM Sans";
+    font-size: 8rem;
+    font-weight: 500;
+    line-height: 0.95;
+
+}
+
+.header__desc {
+    width: 370px;
+    margin-top: 20px;
+    color: var(--second-color-text);
+    font-family: var(--primary-font);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.67;
+
+}
+
+.header__cta {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header__cta a {
+    color: var(--primary-color-text);
+    text-decoration: underline;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.66;
+    /* 166.667% */
+    text-decoration-line: underline;
+    transition: 0.2s;
+}
+
+.header__cta a:hover {
+    scale: 1.1;
+}
+
+.header__socials {
+    margin-top: 110px;
+    margin-bottom: 43px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.social__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* position: relative; */
+}
+
+.social__item {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color-text);
+    transition: var(--timer-transition);
+}
+
+.social__item:hover {
+    background: #5D3BEE;
+    border-color: #5D3BEE;
+    color: white;
+}
