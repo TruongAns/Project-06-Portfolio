@@ -107,6 +107,6 @@
 .custom-gutter {
     --bs-gutter-x: 3rem;
     /* Điều chỉnh khoảng cách ngang */
-    --bs-gutter-y: 1rem;
+    --bs-gutter-y: 3rem;
     /* Điều chỉnh khoảng cách dọc */
 }
