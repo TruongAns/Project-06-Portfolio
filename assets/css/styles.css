@@ -34,12 +34,13 @@ body {
     background: #5E3DF2;
     border: 1px solid #5E3DF2;
     line-height: none;
-    transition: 0.4s;
     z-index: 5;
 }
 
 .button:hover {
     background: #1b0385;
+    transition: 0.4s;
+
 }
 
 :root {
@@ -275,6 +276,7 @@ header .decor {
 }
 
 .header__cta a {
+    padding: 8px 16px;
     color: var(--primary-color-text);
     text-decoration: underline;
     font-size: 1.8rem;
@@ -282,11 +284,14 @@ header .decor {
     line-height: 1.66;
     /* 166.667% */
     text-decoration-line: underline;
-    transition: 0.2s;
+
+
 }
 
 .header__cta a:hover {
     scale: 1.1;
+    transition: 0.4s;
+
 }
 
 .header__socials {
@@ -784,6 +789,13 @@ header .decor {
 .testimotal .decor {
     position: absolute;
     bottom: -145px;
+
+
+}
+
+.decor {
+    user-select: none;
+    pointer-events: none;
 }
 
 .testimotal .decor-1 {
