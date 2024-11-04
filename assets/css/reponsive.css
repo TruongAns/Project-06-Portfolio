@@ -22,23 +22,23 @@
 /* `lg` applies to medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
 
-    .nav__list,
-    .nav__contact-email {
+    .nav .nav__list,
+    .nav .nav__contact-email {
         display: none;
 
     }
 
-    .nav__img {
+    .nav .nav__img {
         order: 1;
     }
 
-    .nav__contact {
+    .nav .nav__contact {
         order: 2;
         margin-left: auto;
         margin-right: 15px;
     }
 
-    .nav__mobile {
+    .nav .nav__mobile {
         order: 3;
         display: block;
     }
